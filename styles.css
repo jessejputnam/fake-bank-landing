@@ -1,0 +1,88 @@
+/*
+
+STYLE GUIDE
+## Layout
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+
+### Neutral
+
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+- Font-size: 18px;
+
+font-family: 'Public Sans', sans-serif;
+font-weights: 300, 500, 700
+
+*/
+
+/* 
+///////////////////////////////////////
+Table of Contents:
+
+#Format
+#Header
+#Media Queries
+
+///////////////////////////////////////
+*/
+
+/* ###############Format################# */
+/* Font */
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 20px;
+}
+
+/* ####################Header####################### */
+.header__banner {
+  height: 60px;
+  border: solid 1px black;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  width: 35px;
+}
+
+.header__nav__bar {
+  height: 3px;
+  width: 34px;
+  background: black;
+  margin: 5px 0;
+}
+
+/* #####################Footer####################### */
+footer {
+  background: #2D314D;
+}
+
+/* ##################Media Queries##################### */
+.desktop {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
