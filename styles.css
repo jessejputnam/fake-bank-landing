@@ -36,26 +36,59 @@ Table of Contents:
 
 #Format
 #Header
+#Hero
+#Intro
+#Services
+#Footer
 #Media Queries
 
 ///////////////////////////////////////
 */
 
 /* ###############Format################# */
-/* Font */
+/* ### Font */
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
 }
 
-main {
-  margin: 0 20px;
+h1, h2, h3, h4 {
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: hsl(233, 26%, 24%);
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+p {
+  color: hsl(0, 0%, 60%);
+  line-height: 150%;
+  letter-spacing: -0.5px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* ### Layout */
+section {
+  padding: 75px 25px;
 }
 
 /* ####################Header####################### */
 .header__banner {
-  height: 60px;
-  border: solid 1px black;
+  height: 70px;
+  background-color: white;
   padding: 10px 25px;
   display: flex;
   justify-content: space-between;
@@ -67,10 +100,63 @@ main {
 }
 
 .header__nav__bar {
-  height: 3px;
-  width: 34px;
+  height: 1px;
+  width: 25px;
   background: black;
-  margin: 5px 0;
+  margin: 5px 0 5px 10px;
+}
+
+/* #####################Hero####################### */
+.hero__img--background {
+  background: url("images/bg-intro-mobile.svg") no-repeat;
+  height: 363px;
+  width: 100%;
+  z-index: -1;
+  position: relative;
+  top: -62px;
+  margin-bottom: -100px;
+}
+
+.hero__img--overlay {
+  position: relative;
+  top: -60px;
+  padding-left: 3vw;
+}
+
+/* ###############Intro################# */
+.intro {
+  padding-bottom: 100px;
+}
+
+.intro__info {
+  /* margin-top: -80px; */
+  text-align: center;
+}
+
+.btn__requestinvite {
+  padding: .7rem 2rem;
+  border: solid 2px hsl(192, 70%, 51%);
+  border-radius: 25px;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  font-weight: bold;
+  letter-spacing: -.2px;
+  color: white;
+  font-size: .9rem;
+}
+
+/* #####################Services####################### */
+.services {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.service__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service__item--img {
+  margin-bottom: 25px;
 }
 
 /* #####################Footer####################### */
