@@ -64,7 +64,7 @@
     </nav>
     <!-- end header__navmenu--mobile -->
 
-    <div class="hero hero__img--background">
+    <div class="hero hero__img">
       <div class="hero__img--overlay">
         <img
           src="images/image-mockups.png"
@@ -260,88 +260,112 @@
     </main>
 
     <footer>
-      <div class="footer__section1">
-        <div class="footer__section1-A">
-          <img
-            src="images/logo-footer.svg"
-            alt="Bank logo"
-            width="139"
-            height="20"
-            class="footer_img"
-          />
-
-          <div class="footer__social">
-            <img
+      <div class="footer__container">
+        <img
+          src="images/logo-footer.svg"
+          alt="Bank logo"
+          width="139"
+          height="20"
+          class="footer__logo footer__item"
+        />
+        <div class="footer__item footer__social">
+          <a
+            target="_blank"
+            href="http://www.facebook.com"
+            class="social__links"
+            ><img
               src="images/icon-facebook.svg"
               alt="Facebook"
               width="20"
               height="20"
-              class="footer_img"
-            />
-            <img
+              class="footer__img"
+          /></a>
+          <a target="_blank" href="http://www.youtube.com" class="social__links"
+            ><img
               src="images/icon-youtube.svg"
               alt="YouTube"
               width="20"
               height="20"
-              class="footer_img"
-            />
-            <img
+              class="footer__img"
+          /></a>
+          <a target="_blank" href="http://www.twitter.com" class="social__links"
+            ><img
               src="images/icon-twitter.svg"
               alt="Twitter"
               width="20"
               height="20"
-              class="footer_img"
-            />
-            <img
+              class="footer__img"
+          /></a>
+          <a
+            target="_blank"
+            href="http://www.pinterest.com"
+            class="social__links"
+            ><img
               src="images/icon-pinterest.svg"
               alt="Pinterest"
               width="20"
               height="20"
-              class="footer_img"
-            />
-            <img
+              class="footer__img"
+          /></a>
+          <a
+            target="_blank"
+            href="http://www.instagram.com"
+            class="social__links"
+            ><img
               src="images/icon-instagram.svg"
               alt="Instagram"
               width="20"
               height="20"
-              class="footer_img"
-            />
-          </div>
-          <!-- end footer__section1__social -->
+              class="footer__img footer__img--end"
+          /></a>
         </div>
-        <!-- end footer__section1-A -->
+        <!-- end footer__social -->
 
-        <div class="footer__section1-B">
-          <nav class="footer__nav1">
-            <ul>
-              <li><a>About Us</a></li>
-              <li><a>Contact</a></li>
-              <li><a>Blog</a></li>
-            </ul>
-          </nav>
-          <!-- end footer__nav1 -->
+        <nav class="footer__item footer__nav footer__nav1">
+          <a class="footer__nav__links" href="https://warontherocks.com/about/"
+            >About Us</a
+          >
+          <a
+            class="footer__nav__links"
+            href="https://en.wikipedia.org/wiki/Contact_(1997_American_film)"
+            >Contact</a
+          >
+          <a
+            class="footer__nav__links"
+            href="https://colmanandcompany.com/blog/2014/04/blogs-essential-tool-apparel-business/"
+            >Blog</a
+          >
+        </nav>
+        <!-- end footer__nav1 -->
 
-          <nav class="footer__nav2">
-            <ul>
-              <li><a>Careers</a></li>
-              <li><a>Support</a></li>
-              <li><a>Privacy Policy</a></li>
-            </ul>
-          </nav>
-          <!-- end footer__nav2 -->
-        </div>
-      </div>
-      <!-- end footer__section1 -->
-      <div class="footer__section2">
-        <button type="button" class="btn btn__requestinvite desktop hidden">
+        <nav class="footer__nav footer__nav2">
+          <a
+            class="footer__nav__links"
+            href="https://www.amazon.com/Careers-Graphic-Guide-Finding-Perfect/dp/1465429735"
+            >Careers</a
+          >
+          <a
+            class="footer__nav__links"
+            href="https://www.flutes.com/what-does-support-mean/"
+            >Support</a
+          >
+          <a
+            class="footer__nav__links"
+            href="https://www.techrepublic.com/article/five-ways-to-maintain-your-privacy-on-your-smartphone-no-downloads-required/"
+            >Privacy Policy</a
+          >
+        </nav>
+        <!-- end footer__nav2 -->
+
+        <button type="button" class="btn btn__requestinvite footer__item">
           Request Invite
         </button>
 
-        <p class="description footer__copyright">
+        <p class="footer__item footer__copyright">
           © Easybank. All Rights Reserved
         </p>
       </div>
-      <!-- end footer__section2 -->
+      <!-- end footer__container -->
     </footer>
   </body>
 </html>
