@@ -40,6 +40,7 @@ Table of Contents:
 #Intro
 #Services
 #Footer
+#MobileNav
 #Media Queries
 
 ///////////////////////////////////////
@@ -71,7 +72,7 @@ h3 {
   font-size: 1.1rem;
 }
 
-p {
+.description {
   color: hsl(0, 0%, 60%);
   line-height: 150%;
   letter-spacing: -0.5px;
@@ -89,7 +90,7 @@ section {
 
 /* ####################Header####################### */
 .header__banner {
-  height: 70px;
+  height: 60px;
   background-color: white;
   padding: 10px 25px;
   display: flex;
@@ -115,13 +116,14 @@ section {
   width: 100%;
   z-index: -1;
   position: relative;
-  top: -62px;
   margin-bottom: -100px;
 }
 
 .hero__img--overlay {
   width: 350px;
   margin: -60px auto 0;
+  position: relative;
+  top: -62px;
 }
 
 /* ###############Intro################# */
@@ -151,6 +153,7 @@ section {
 
 .title--intro {
   text-align: center;
+  margin-top: 40px;
 }
 
 .description--intro {
@@ -201,7 +204,7 @@ section {
 }
 
 .description--article, .title--article {
-  padding: 0 20px;
+  padding: 0 25px;
   line-height: 120%;
 }
 
@@ -261,8 +264,9 @@ footer {
   color: white;
 }
 
-.footer__nav__links:hover {
+.links:hover {
   color:hsl(136, 62%, 42%);
+  cursor: pointer;
 }
 
 /* Invite button */
@@ -272,7 +276,26 @@ footer {
 
 /* Copyright */
 .footer__copyright {
-  margin: 30px 0 0 0;
+  margin: 30px 0 30px 0;
+}
+
+/* ##################MobileNav##################### */
+.navmenu--mobile {
+  position: absolute;
+  height: 275px;
+  width: 90%;
+  background-color: white;
+  border: solid 1px black;
+  left: 5%;
+  top: 11%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.mobile--links {
+  margin-top: 30px;
 }
 
 /* ##################Media Queries##################### */

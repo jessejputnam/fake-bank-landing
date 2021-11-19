@@ -21,6 +21,7 @@
 
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
+
   <body>
     <header class="header__banner">
       <img
@@ -53,14 +54,12 @@
     </header>
     <!-- end header__banner -->
 
-    <nav class="header__navmenu--mobile mobile hidden">
-      <ul>
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Contact</a></li>
-        <li><a>Blog</a></li>
-        <li><a>Careers</a></li>
-      </ul>
+    <nav class="navmenu--mobile mobile">
+      <a class="links mobile--links">Home</a>
+      <a class="links mobile--links">About</a>
+      <a class="links mobile--links">Contact</a>
+      <a class="links mobile--links">Blog</a>
+      <a class="links mobile--links">Careers</a>
     </nav>
     <!-- end header__navmenu--mobile -->
 
@@ -186,7 +185,7 @@
             <p class="description description--article article__author">
               By Claire Robinson
             </p>
-            <h4 class="title title--article">
+            <h4 class="links title title--article">
               Receive money in any currency with no fees
             </h4>
             <p class="description description--article">
@@ -205,7 +204,7 @@
             <p class="description description--article article__author">
               By Wilson Hutton
             </p>
-            <h4 class="title title--article">
+            <h4 class="links title title--article">
               Treat yourself without worrying about money
             </h4>
             <p class="description description--article">
@@ -224,7 +223,7 @@
             <p class="description description--article article__author">
               By Wilson Hutton
             </p>
-            <h4 class="title title--article">
+            <h4 class="links title title--article">
               Take your Easybank card wherever you go
             </h4>
             <p class="description description--article">
@@ -243,7 +242,7 @@
             <p class="description description--article article__author">
               By Claire Robinson
             </p>
-            <h4 class="title title--article">
+            <h4 class="links title title--article">
               Our invite-only Beta accounts are now live!
             </h4>
             <p class="description description--article">
@@ -322,16 +321,18 @@
         <!-- end footer__social -->
 
         <nav class="footer__item footer__nav footer__nav1">
-          <a class="footer__nav__links" href="https://warontherocks.com/about/"
+          <a
+            class="links footer__nav__links"
+            href="https://warontherocks.com/about/"
             >About Us</a
           >
           <a
-            class="footer__nav__links"
+            class="links footer__nav__links"
             href="https://en.wikipedia.org/wiki/Contact_(1997_American_film)"
             >Contact</a
           >
           <a
-            class="footer__nav__links"
+            class="links footer__nav__links"
             href="https://colmanandcompany.com/blog/2014/04/blogs-essential-tool-apparel-business/"
             >Blog</a
           >
@@ -340,17 +341,17 @@
 
         <nav class="footer__nav footer__nav2">
           <a
-            class="footer__nav__links"
+            class="links footer__nav__links"
             href="https://www.amazon.com/Careers-Graphic-Guide-Finding-Perfect/dp/1465429735"
             >Careers</a
           >
           <a
-            class="footer__nav__links"
+            class="links footer__nav__links"
             href="https://www.flutes.com/what-does-support-mean/"
             >Support</a
           >
           <a
-            class="footer__nav__links"
+            class="links footer__nav__links"
             href="https://www.techrepublic.com/article/five-ways-to-maintain-your-privacy-on-your-smartphone-no-downloads-required/"
             >Privacy Policy</a
           >
@@ -361,7 +362,7 @@
           Request Invite
         </button>
 
-        <p class="footer__item footer__copyright">
+        <p class="description footer__item footer__copyright">
           © Easybank. All Rights Reserved
         </p>
       </div>
