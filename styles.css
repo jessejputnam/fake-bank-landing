@@ -99,14 +99,37 @@ section {
 }
 
 .hamburger {
-  width: 35px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 
 .header__nav__bar {
-  height: 1px;
+  height: 1.5px;
   width: 25px;
   background: black;
-  margin: 5px 0 5px 10px;
+  margin: 5px 0 5px 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+}
+
+.hamburger__middle--open {
+  transform: translateY(-50px) rotate(720deg);
+  overflow: hidden;
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+}
+
+.hamburger__top--open {
+  transform: rotate(45deg) translate(2px, 7px);
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+}
+
+.hamburger__bottom--open {
+  transform: rotate(-45deg) translate(2px, -7px);
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
 }
 
 /* #####################Hero####################### */
@@ -292,6 +315,22 @@ footer {
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  animation-name: FadeIn;
+  animation-duration: .5s;
+  transition-timing-function: linear;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hidden-menu {
+  display: none;
 }
 
 .mobile--links {
