@@ -84,6 +84,10 @@ h3 {
 }
 
 /* ### Layout */
+body {
+  background-color:hsl(0, 0%, 98%)
+}
+
 section {
   padding: 75px 25px;
 }
@@ -134,16 +138,19 @@ section {
 
 /* #####################Hero####################### */
 .hero__img {
-  background: url("images/bg-intro-mobile.svg") no-repeat;
+  background-image: url("images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
   height: 363px;
-  width: 100%;
+  width: 99vw;
   z-index: -1;
   position: relative;
-  margin-bottom: -100px;
+  top: -75px;
+  margin: 0 0 -100px -20px;
 }
 
 .hero__img--overlay {
-  width: 350px;
+  width: 330px;
   margin: -60px auto 0;
   position: relative;
   top: -62px;
@@ -224,6 +231,7 @@ section {
 
 .articles__img {
   border-radius: 5px 5px 0 0;
+  margin: 0 auto;
 }
 
 .description--article, .title--article {
@@ -338,10 +346,96 @@ footer {
 }
 
 /* ##################Media Queries##################### */
-.desktop {
+.hidden {
   display: none;
 }
 
-.hidden {
-  display: none;
+@media only screen and (max-width: 749.9px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  /* Page Format */
+  .mobile {
+    display: none;
+  }
+
+  body {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .header__banner {
+    font-size: .8rem;
+    justify-content: space-between;
+  }
+
+  .header__img {
+    margin-left: 5vw;
+  }
+
+  .btn__requestinvite.desktop {
+    margin-right: 5vw;
+  }
+
+  .header__navmenu--desktop {
+    display: flex;
+    justify-content: space-between;
+    color:hsl(0, 0%, 60%)
+  }
+
+  .header__nav--spacer {
+    margin-right: 25px;
+  }
+
+  .header__nav__links {
+    color:hsl(0, 0%, 60%);
+    text-decoration: none;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+
+  .hero__img {
+    background: url("images/bg-intro-desktop.svg") no-repeat;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    background-position: 0 50%;
+    left: 100px;
+    padding: 0;
+  }
+
+  .hero__img--overlay {
+    transform: scale(1.6);
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    right: 90px;
+    top: 100px;
+  }
+
+  .overlay__img {
+    object-fit: cover;
+    object-position: -20% 50%;
+  }
+
+  .intro__info {
+    width: 50%;
+    text-align: left;
+  }
+
+  .title--intro, .description--intro {
+    text-align: left;
+  }
 }
