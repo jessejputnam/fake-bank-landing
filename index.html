@@ -150,7 +150,7 @@
             </p>
           </div>
 
-          <div class="item service__item">
+          <div class="item service__item service__item__end">
             <img
               src="images/icon-api.svg"
               alt="Open API"
@@ -233,7 +233,7 @@
           </div>
           <!-- end articles_item -->
 
-          <div class="articles__item item">
+          <div class="articles__item articles__item__end item">
             <img
               src="images/image-confetti.jpg"
               alt="Falling confetti"
@@ -260,65 +260,74 @@
 
     <footer>
       <div class="footer__container">
-        <img
-          src="images/logo-footer.svg"
-          alt="Bank logo"
-          width="139"
-          height="20"
-          class="footer__logo footer__item"
-        />
-        <div class="footer__item footer__social">
-          <a
-            target="_blank"
-            href="http://www.facebook.com"
-            class="social__links"
-            ><img
-              src="images/icon-facebook.svg"
-              alt="Facebook"
-              width="20"
-              height="20"
-              class="footer__img"
-          /></a>
-          <a target="_blank" href="http://www.youtube.com" class="social__links"
-            ><img
-              src="images/icon-youtube.svg"
-              alt="YouTube"
-              width="20"
-              height="20"
-              class="footer__img"
-          /></a>
-          <a target="_blank" href="http://www.twitter.com" class="social__links"
-            ><img
-              src="images/icon-twitter.svg"
-              alt="Twitter"
-              width="20"
-              height="20"
-              class="footer__img"
-          /></a>
-          <a
-            target="_blank"
-            href="http://www.pinterest.com"
-            class="social__links"
-            ><img
-              src="images/icon-pinterest.svg"
-              alt="Pinterest"
-              width="20"
-              height="20"
-              class="footer__img"
-          /></a>
-          <a
-            target="_blank"
-            href="http://www.instagram.com"
-            class="social__links"
-            ><img
-              src="images/icon-instagram.svg"
-              alt="Instagram"
-              width="20"
-              height="20"
-              class="footer__img footer__img--end"
-          /></a>
+        <div class="footer__img-social">
+          <img
+            src="images/logo-footer.svg"
+            alt="Bank logo"
+            width="139"
+            height="20"
+            class="footer__logo footer__item"
+          />
+          <div class="footer__item footer__social">
+            <a
+              target="_blank"
+              href="http://www.facebook.com"
+              class="social__links"
+              ><img
+                src="images/icon-facebook.svg"
+                alt="Facebook"
+                width="20"
+                height="20"
+                class="footer__img"
+            /></a>
+            <a
+              target="_blank"
+              href="http://www.youtube.com"
+              class="social__links"
+              ><img
+                src="images/icon-youtube.svg"
+                alt="YouTube"
+                width="20"
+                height="20"
+                class="footer__img"
+            /></a>
+            <a
+              target="_blank"
+              href="http://www.twitter.com"
+              class="social__links"
+              ><img
+                src="images/icon-twitter.svg"
+                alt="Twitter"
+                width="20"
+                height="20"
+                class="footer__img"
+            /></a>
+            <a
+              target="_blank"
+              href="http://www.pinterest.com"
+              class="social__links"
+              ><img
+                src="images/icon-pinterest.svg"
+                alt="Pinterest"
+                width="20"
+                height="20"
+                class="footer__img"
+            /></a>
+            <a
+              target="_blank"
+              href="http://www.instagram.com"
+              class="social__links"
+              ><img
+                src="images/icon-instagram.svg"
+                alt="Instagram"
+                width="20"
+                height="20"
+                class="footer__img footer__img--end"
+            /></a>
+          </div>
+          <!-- end footer__social -->
         </div>
-        <!-- end footer__social -->
+        <!-- end footer__img-social -->
 
         <nav class="footer__item footer__nav footer__nav1">
           <a
@@ -358,13 +367,16 @@
         </nav>
         <!-- end footer__nav2 -->
 
-        <button type="button" class="btn btn__requestinvite footer__item">
-          Request Invite
-        </button>
+        <div class="footer__invite-copy">
+          <button type="button" class="btn btn__requestinvite footer__item">
+            Request Invite
+          </button>
 
-        <p class="description footer__item footer__copyright">
-          © Easybank. All Rights Reserved
-        </p>
+          <p class="description footer__item footer__copyright">
+            © Easybank. All Rights Reserved
+          </p>
+        </div>
+        <!-- end footer__invite-copy -->
       </div>
       <!-- end footer__container -->
     </footer>
